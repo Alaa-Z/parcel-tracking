@@ -5,7 +5,6 @@ import Detail from "../molecules/Detail";
 
 import "../../css/HomePage.css";
 
-
 export default function HomePage() {
       // o is loading 1 is ready 2 is error 
   const [status,setStatus]= useState(0);

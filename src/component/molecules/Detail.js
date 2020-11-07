@@ -2,6 +2,8 @@ import React from "react";
 import {useState} from "react";
 
 import"../../css/detail.css";
+
+
 export default function Detail ({data}){
     const {  
         id,
@@ -35,12 +37,12 @@ return (
             </button>
             { openDetails 
                 ? // If true, your code
-                  <p><li> Estimated time of arrival: {eta}</li>
+                  <p>
                      <li> Status: {status} </li>  <li>Sender: {sender}</li>
                      <li>Verification_required: {verification_required} </li>
                      <li>Location_name: {location_name}</li>
                      <li>Last_updated: {last_updated}</li>
-                     </p>
+                  </p>
                  
                 : // If false, Nothing
                 null  

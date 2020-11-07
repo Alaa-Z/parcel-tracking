@@ -2,19 +2,19 @@
 import React from "react";
 import {Link } from "react-router-dom";
 
-import postlogo from "../../asserts/images/postlogo.png";
+import postlogo from "../../assets/images/postlogo.png";
 
 import "../../css/Nav.css";
 
 export default function Nav () {
     return (
-        <nav>
+        <nav className="nav">
         <Link to="/">
         <img id ="logo" src={postlogo} allt="logo" />
         </Link>
         <ul className="list">
         <Link to ="/parcel">
-         <li className="navStyle"> My Parcel</li>
+         <li className="navStyle"> <b>My Parcel</b></li>
          </Link>
         </ul>
      </nav>

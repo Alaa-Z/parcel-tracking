@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+  }
+  .list{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  .navStyle{
+    color: #241501;
+    font-size:18px;
+    list-style-type: none;
+  }
+  
+  .nav a:hover {
+      background-color: rgb(233, 232, 232);
+
+  }
+  .nav{
+    text-decoration: none;
+  }
+   
