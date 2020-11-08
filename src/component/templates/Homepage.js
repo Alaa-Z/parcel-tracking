@@ -9,7 +9,7 @@ export default function Home(){
         <body className="first">
         <Nav />
         <h1>
-        Welcome to your your Home Page
+        Welcome to your Home Page
         </h1>
 
 
