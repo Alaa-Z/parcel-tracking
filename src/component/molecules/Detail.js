@@ -27,6 +27,7 @@ export default function Detail ({data}){
 
 return (
     <ul className="detail">
+    <li> <b>Name: {user_name}</b></li>
     <li> <b class="first">Parcel id: {parcel_id }</b></li>
     <li> Estimated time of arrival: {eta}</li>
     
@@ -38,10 +39,10 @@ return (
             { openDetails 
                 ? // If true, your code
                   <p>
-                     <li> Status: {status} </li>  <li>Sender: {sender}</li>
-                     <li>Verification_required: {verification_required} </li>
-                     <li>Location_name: {location_name}</li>
                      <li>Last_updated: {last_updated}</li>
+                     <li> Status: {status} </li>  <li>Sender: {sender}</li>
+                     <li>Location_name: {location_name}</li>
+                     
                   </p>
                  
                 : // If false, Nothing

@@ -1,12 +1,11 @@
-# Getting Started with Create React App
+# Package Tracking Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple web app using React.js for customers that displays a list of packages (or parcels) with some details they need to know like order status, ETAs, pickup locations, etc
 
-## Available Scripts
+## Instructions
 
-In the project directory, you can run:
-
-### `npm start`
+1. To install this project write `npm install` in the console to get all the Node dependecies beforehand.
+2. To run the project write `npm start` in the console to start the project.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
