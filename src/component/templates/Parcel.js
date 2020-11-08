@@ -45,7 +45,7 @@ return (
   <div className="home-page">
     <Header/ >
      
-        <h2> Parcels:</h2>
+        <h2> Your parcels:</h2>
           <section className="container">
            { status === 0 ? <p> Loading..  </p>: null}
            { status === 1 ? [Details]  : null }
