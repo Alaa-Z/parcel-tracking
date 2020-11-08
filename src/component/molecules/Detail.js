@@ -1,6 +1,7 @@
+// import core
 import React from "react";
 import {useState} from "react";
-
+// import css file 
 import"../../css/detail.css";
 
 
@@ -23,7 +24,7 @@ export default function Detail ({data}){
         last_updated,
           } = data;
 
-        const [ openDetails, setOpenDetails] = useState(false); // Initially false
+        const [ openDetails, setOpenDetails] = useState(false); // to show more details with Initially false 
 
 return (
     <ul className="detail">
@@ -32,12 +33,12 @@ return (
     <li> Estimated time of arrival: {eta}</li>
     
             <button
-                onClick={() => setOpenDetails(!openDetails)} // Make it true if false, or false if true
+                onClick={() => setOpenDetails(!openDetails)} 
             >
                 Show me more
             </button>
             { openDetails 
-                ? // If true, your code
+                ? // If true
                   <p>
                      <li>Last_updated: {last_updated}</li>
                      <li> Status: {status} </li>  <li>Sender: {sender}</li>
@@ -45,7 +46,7 @@ return (
                      
                   </p>
                  
-                : // If false, Nothing
+                : // If false, Nothing 
                 null  
             }
     

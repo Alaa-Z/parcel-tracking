@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+// import components
 import Header from "../organism/Nav";
 import Detail from "../molecules/Detail";
-
+// css file
 import "../../css/HomePage.css";
 
 export default function HomePage() {
@@ -12,11 +12,11 @@ export default function HomePage() {
 
   const endpoint ="https://my.api.mockaroo.com/orders.json?key=e49e6840";
 
-  // like a constructor 
+  // behave like a constructor 
   useEffect( ()=> {
     // will run at the begining
     const getData = async() =>{
-      // if there is data
+      // if there is data 
       try {
             const response = await fetch(endpoint, { mode: "cors"});
             const data = await response.json();
@@ -28,7 +28,7 @@ export default function HomePage() {
             setStatus(1);
       }
       catch {
-        // handel error
+        // to handel errors
              console.log("ther is an error");
              setStatus(2);
       }
